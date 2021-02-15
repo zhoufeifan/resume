@@ -2,7 +2,7 @@
 @import "../node_modules/compass-mixins/lib/compass/css3";
 
 $color-gray: #d1d1d1;
-$color-green: #00b38a;
+$color-green: #3498db;
 $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
@@ -228,19 +228,19 @@ a {
 
   .content-left,
   .content-right {
-    width: 50%;
+    // width: 50%;
     @media screen and (max-width: 1024px) {
       width: 100%;
     }
   }
 
-  .content-left {
-    float: left;
-  }
+  // .content-left {
+  //   float: left;
+  // }
 
-  .content-right {
-    float: right;
-  }
+  // .content-right {
+  //   float: right;
+  // }
 
   section {
     overflow: hidden;
@@ -315,9 +315,11 @@ a {
     min-height: 30px;
 
     .item-time {
-      display: inline-block;
-      float: left;
-      width: 25%;
+      // display: inline-block;
+      // float: left;
+      // width: 25%;
+      margin-left: 20px;
+      font-weight: normal;
       @media screen and (max-width: 720px) {
         width: 100%;
         margin-bottom: 5px;
@@ -330,9 +332,9 @@ a {
       right: 0;
     }
 
-    .item-name {
-      float: left;
-    }
+    // .item-name {
+    //   float: left;
+    // }
   }
 
   .item-bd {
@@ -380,7 +382,12 @@ a {
     }
   }
 }
-
+// .work-list-section {
+//   .section-content >li {
+//     width: 50%;
+//     float: left;
+//   }
+// }
 .btn {
   display: inline-block;
   padding: 0 5px;
@@ -418,6 +425,22 @@ a {
 .skill {
   width: 100%;
   padding: 0 !important;
+}
+.skill {
+  .content-left,
+  .content-right {
+    // width: 50%;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  .content-left {
+    float: left;
+  }
+
+  .content-right {
+    float: right;
+  }
 }
 
 .link-icon {
